@@ -21,9 +21,14 @@ namespace Docs
     public partial class MainWindow : Window
     {
 
+        private int AnchoEditor { get; set; }
+        private int AltoEditor { get; set; }
+
         public MainWindow()
         {
             InitializeComponent();
+            AnchoEditor = 500;
+            AltoEditor = 500;
         }
 
         private void NuevoButton_Click(object sender, RoutedEventArgs e)
@@ -31,17 +36,19 @@ namespace Docs
             Editor editor = new Editor();
             editor.Owner = this;
             editor.Title = $"Documento {OwnedWindows.Count}";
+            editor.Width = AnchoEditor;
+            editor.Height = AltoEditor;
             editor.Show();
         }
 
         private void ConfiguracionButton_Click(object sender, RoutedEventArgs e)
         {
-            Configuracion configuracion = new Configuracion();
+            Configuracion configuracion = new Configuracion(AnchoEditor, AltoEditor);
             configuracion.Owner = this;
             if (configuracion.ShowDialog() == true)
             {
-                Editor.Ancho = configuracion.Ancho;
-                Editor.Alto = configuracion.Alto;
+                AnchoEditor = configuracion.Ancho;
+                AltoEditor = configuracion.Alto;
             }
         }
     }

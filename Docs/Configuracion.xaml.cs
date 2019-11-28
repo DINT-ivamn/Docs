@@ -22,11 +22,11 @@ namespace Docs
         public int Ancho { get; set; }
         public int Alto { get; set; }
 
-        public Configuracion()
+        public Configuracion(int ancho, int alto)
         {
             InitializeComponent();
-            Ancho = Editor.Ancho;
-            Alto = Editor.Alto;
+            Ancho = ancho;
+            Alto = alto;
             AnchoTextBox.Text = Ancho.ToString();
             AltoTextBox.Text = Alto.ToString();
         }

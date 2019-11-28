@@ -22,14 +22,10 @@ namespace Docs
     public partial class Editor : Window
     {
         private bool ArchivoGuardado { get; set; }
-        public static int Alto { get; set; } = 500;
-        public static int Ancho { get; set; } = 500;
 
         public Editor()
         {
             InitializeComponent();
-            Width = Ancho;
-            Height = Alto;
         }
 
         private void Window_Closing(object sender, System.ComponentModel.CancelEventArgs e)
