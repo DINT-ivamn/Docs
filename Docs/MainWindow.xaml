@@ -5,7 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Docs"
         mc:Ignorable="d"
-        Title="Docs" Height="450" Width="800" ResizeMode="NoResize" SizeToContent="WidthAndHeight">
+        Title="Docs" Height="450" Width="800" ResizeMode="NoResize" SizeToContent="WidthAndHeight" Icon="128.ico">
     <StackPanel>
         <Button x:Name="NuevoButton" Margin="5" Content="Nuevo documento" Click="NuevoButton_Click"/>
         <Button x:Name="ConfiguracionButton" Margin="5" Content="Configuración" Click="ConfiguracionButton_Click"/>

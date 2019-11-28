@@ -5,7 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Docs"
         mc:Ignorable="d"
-        Title="Documento" Height="450" Width="800" Closing="Window_Closing">
+        Title="Documento" Height="450" Width="800" Closing="Window_Closing" Icon="128.ico">
     <DockPanel>
         <Button x:Name="GuardarButton" DockPanel.Dock="Bottom" Click="GuardarButton_Click" Content="Guardar" Margin="10"/>
         <TextBox x:Name="TextoTextBox" AcceptsReturn="True"/>

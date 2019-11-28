@@ -5,7 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Docs"
         mc:Ignorable="d"
-        Title="Configuracion" Height="450" Width="800" ResizeMode="NoResize" SizeToContent="WidthAndHeight" ShowInTaskbar="False">
+        Title="Configuracion" Height="450" Width="800" ResizeMode="NoResize" SizeToContent="WidthAndHeight" ShowInTaskbar="False" Icon="128.ico">
     <Grid x:Name="MainGrid">
         <Grid.RowDefinitions>
             <RowDefinition/>
