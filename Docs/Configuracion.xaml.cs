@@ -27,8 +27,6 @@ namespace Docs
             InitializeComponent();
             Ancho = ancho;
             Alto = alto;
-            AnchoTextBox.Text = Ancho.ToString();
-            AltoTextBox.Text = Alto.ToString();
         }
 
         private void AceptarButton_Click(object sender, RoutedEventArgs e)
@@ -36,7 +34,6 @@ namespace Docs
             Ancho = int.Parse(AnchoTextBox.Text);
             Alto = int.Parse(AltoTextBox.Text);
             DialogResult = true;
-            Close();
         }
     }
 }

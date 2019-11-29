@@ -18,9 +18,9 @@
         </Grid.ColumnDefinitions>
 
         <TextBlock Margin="5" Grid.Column="0" Grid.Row="0" Text="Ancho"/>
-        <TextBox x:Name="AnchoTextBox" Grid.Column="1" Grid.Row="0" VerticalAlignment="Center"/>
+        <TextBox x:Name="AnchoTextBox" Grid.Column="1" Grid.Row="0" VerticalAlignment="Center" Text="{Binding RelativeSource={RelativeSource AncestorType=local:Configuracion}, Path=Ancho}"/>
         <TextBlock Margin="5" Grid.Column="0" Grid.Row="1" Text="Alto"/>
-        <TextBox x:Name="AltoTextBox" Grid.Column="1" Grid.Row="1" VerticalAlignment="Center"/>
+        <TextBox x:Name="AltoTextBox" Grid.Column="1" Grid.Row="1" VerticalAlignment="Center" Text="{Binding RelativeSource={RelativeSource AncestorType=local:Configuracion}, Path=Alto}"/>
         <StackPanel Grid.Row="2" Grid.Column="0" Grid.ColumnSpan="2" HorizontalAlignment="Right" Orientation="Horizontal">
             <Button x:Name="AceptarButton" Margin="5" Content="Aceptar" IsDefault="True" Click="AceptarButton_Click"/>
             <Button x:Name="CancelarButton" Margin="5" Content="Cancelar" IsCancel="True"/>
